@@ -1,10 +1,13 @@
 const express = require('express')
 const app = express()
-const db = require('./db')
+const db = require('./db');
+require('dotenv').config();
 
 //Parsing the request body
 const bodyParser = require('body-parser')
 app.use(bodyParser.json())
+
+const PORT = process.env.PORT || 3000
 
 
 
@@ -16,6 +19,6 @@ app.use('/menu',menu)
 
 
 
-app.listen(3000,() => {
+app.listen(PORT,() => {
     console.log("Server started on 3000")
 })
