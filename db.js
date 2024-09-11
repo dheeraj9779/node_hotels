@@ -2,8 +2,8 @@ const mongoose = require('mongoose')
 //to configure dorenv
 require('dotenv').config()
 
-//const mongoURL = process.env.DB_URL_LOCAL
-const mongoURL = process.env.DB_URL
+const mongoURL = process.env.DB_URL_LOCAL
+//const mongoURL = process.env.DB_URL
 
 
 //setup connection
